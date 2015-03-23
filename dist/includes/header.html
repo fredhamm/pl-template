@@ -1,0 +1,117 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+            
+
+            include "project-nav.html"
+
+
+        <div class="container">
+            <div class="starter-template">
+                <div class="row">
+                  <div class="col-md-12">
+                  <h1>Images
+
+<small>
+<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#demo" aria-expanded="true" aria-controls="demo">
+Show source
+</button>
+</small>
+
+                  </h1>
+              </div>
+
+
+              
+                  
+<!-- include "project-nav.html"
+ -->              
+
+
+
+                  <div class="col-md-12 collapse" id="demo">
+                    
+<pre>
+LESS
+
+.thumbnail {
+  display: block;
+  padding: @thumbnail-padding;
+  margin-bottom: @line-height-computed;
+  line-height: @line-height-base;
+  background-color: @thumbnail-bg;
+  border-radius: @thumbnail-border-radius;
+  .transition(border .2s ease-in-out);
+
+  > img,
+  a > img {
+    &:extend(.img-responsive);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Add a hover state for linked versions only
+  a&:hover,
+  a&:focus,
+  a&.active {
+    border-color: @link-color;
+  }
+
+  // Image captions
+  .caption {
+    padding: @thumbnail-caption-padding;
+    color: @thumbnail-caption-color;
+    border: 1px solid @thumbnail-border;
+  }
+}
+</pre>
+
+
+
+                  </div>
+
+
+               
+                </div> <!--// Row -->
+
+
+
+            </div> <!--// starter-template -->
+        </div> <!--// container -->
+
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+     <script>
+    //   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    //   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    //   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    //   e.src='//www.google-analytics.com/analytics.js';
+    //   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    //   ga('create','UA-XXXXX-X');ga('send','pageview');
+    // </script>
+
+
+        <script src="scripts/main.js"></script>
+
+        <script src="scripts/vendor/bootstrap.js"></script>
+
+        
+</body>
+</html>

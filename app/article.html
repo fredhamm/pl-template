@@ -1,0 +1,28 @@
+include "html-header.html"
+include "project-nav.html"
+<div class="container">
+  <div class="starter-template">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Articles
+          <small>
+            <!-- <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#demo" aria-expanded="true" aria-controls="demo"> Show source </button> -->
+          </small>
+        </h1>
+      </div>
+      <div class="col-md-6 col-md-offset-6">
+        <button type="button" class="btn btn-danger pull-left" id="Prev">Prev</button>
+        <button type="button" class="btn btn-success pull-right" id="Next">Next</button>
+      </div>
+      <div class="col-md-6" id="datatest"> </div>
+      <div class="col-md-6" id="sampleArea"> </div>
+    </div>
+  </div> <!--// starter-template -->
+</div><!--// container -->
+<script>
+$(window).fadeThis({
+  speed: 200,
+  reverse: false
+});
+</script>
+include "scripts.html"

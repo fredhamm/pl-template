@@ -1,0 +1,316 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	padding-top:50px;
+	padding-bottom: 50px;
+	height:100%;
+}
+
+.starter-template{padding:40px 0px;}
+
+.navbar-inverse .navbar-nav>li>a{ color: #fff;}
+
+.fullwidth-hero{
+	margin-top: -50px;
+	background-color: #3f51b5;
+	color:#fff;
+	padding:50px;
+}
+
+.benefits{
+	padding:40px;
+	text-align: center;
+}
+
+.getstart{
+	padding-top: 30px;
+}
+
+
+//// Color page
+
+.colorz{
+
+	p{padding:15px;}
+
+}
+
+//// End Color page
+
+.btn{
+	margin-bottom: 5px;
+	border-radius: 0;
+}
+
+pre{
+	overflow: auto;
+	max-height: 300px;
+}
+
+.panel{
+	.panel-body{
+		padding:20px;
+		h4{margin-top: 0;}
+		h3{margin: 12px 0;}
+	}
+}
+
+#demo{margin-top: 30px;}
+
+#logo-ape-nav{
+	width:142px;
+	height:24px;
+	fill:#fff;
+}
+
+.logo-ape-demo{
+	width:250px;
+	height:45px;
+}
+
+#datatest{margin-top: 20px;}
+
+.street{color:blue;}
+
+.medium-separator{border-color:transparent;}
+
+.big-separator{
+	height:50px;
+	border-color:transparent;
+}
+
+.login_input{padding:20px;}
+
+.login-panel{
+	.panel-body{
+
+		padding:30px;
+		h3{margin:22px 0;}
+
+		.form-group{margin-bottom: 30px;}
+	}
+
+}
+
+.footerz{
+	padding:100px 0;
+	background-color: @navbar-inverse-bg;
+	color:#fff;
+	bottom:0;
+	width:100%;
+
+	@media (max-width: @screen-xs-max) { padding:50px 0;}
+
+}
+
+.label{
+	font-size: 100%;
+	line-height: 2;
+}
+
+.thumbnail{.caption{padding: 0 20px 10px 20px;}}
+
+
+/////// Color mixin
+
+.bg-blue {
+// Given the contrast here, this is the only class to have its color inverted
+// automatically.
+color: #fff;
+.bg-variant(@exampleblue);
+}
+.bg-green {
+	.bg-variant(@examplegreen);
+}
+.bg-yellow {
+	.bg-variant(@exampleyellow);
+}
+.bg-lightgrey {
+	.bg-variant(@examplelightgrey);
+}
+.bg-darkgrey {
+	.bg-variant(@exampledarkgrey);
+	color: #fff;
+}
+.bg-red {
+	.bg-variant(@examplered);
+}
+.bg-black {
+	.bg-variant(@exampleblack);
+	color:#fff;
+}
+
+/////// End Color mixin
+
+
+// Mixin and adjust the regular image class
+.thumbnail {
+	border: 1px solid transparent;
+  // Image captions
+  .caption {
+  	border: 1px solid @thumbnail-border;
+  }
+}
+
+/////// Iphone / Ipad containers 
+
+.iphone-container{
+	background: url(../images/iphone-6-gold-frame.png) no-repeat;
+	height:563px;
+	width:100%;
+
+	.screenz{
+		width: 219px;
+		height: 391px;
+		position: relative;
+		top: 61px;
+		left: 21px;
+		border-radius: 2px;
+		padding: 5px;
+		overflow-y: auto;
+
+	}
+}
+
+.ipad-container{
+	background: url(../images/iPad-Air-2-frame.png) no-repeat;
+	height:968px;
+	width:100%;
+
+	.screenz-ipad{
+		width: 551px;
+		height: 733px;
+		//background-color: aquamarine;
+		position: relative;
+		top: 85px;
+		left: 51px;
+		border-radius: 2px;
+		padding: 5px;
+		overflow-y: auto;
+	}
+}
+
+/////// End Iphone / Ipad containers 
+
+
+/////// Hamburger to X icon 
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+	top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+	top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+	position: relative;
+//transition: all 300ms ease-in-out;
+.easeInOutCirc(200ms);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+	top: 6px;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+	background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	top: -6px;
+	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg); /* IE 9 */
+	-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+}
+
+/////// End Hamburger to X icon 
+
+
+/////// Form fix
+
+.collapsing{.easeInOutCirc;}
+
+.formtest{
+
+	.form-group{
+
+		@media (min-width: @screen-sm-min) { margin-bottom: 15px; }
+
+		.form-control{
+
+			width: 100%;
+		}
+	}
+
+}
+/////// End Form fix
+
+
+/////// Carousel
+
+.fullcarousel{
+	position:relative;
+	height:100%;
+
+	.flickerplate { height:100%;}
+}
+/////// End Carousel
+
+
+/////// Markup highlighter in modal
+
+.bs-component {
+	position: relative;
+
+	.modal {
+		position: relative;
+		top: auto;
+		right: auto;
+		left: auto;
+		bottom: auto;
+		z-index: 10523;
+		display: block;
+
+		&-dialog {
+			width: 90%;
+		}
+	}
+
+	.popover {
+		position: relative;
+		display: inline-block;
+		width: 220px;
+		margin: 20px;
+	}
+}
+
+#source-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	font-weight: bold;
+}
+
+#icons{
+	margin: 40px auto;
+	padding-left: 5px;
+	//max-width: 700px;
+	width: 100%;
+	list-style: none;
+	text-align: left;
+	font-size: 29px;
+
+	li{
+		display:inline-block;
+		padding:20px;
+	}
+}
+/////// End Markup highlighter in modal

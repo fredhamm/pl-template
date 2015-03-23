@@ -1,0 +1,81 @@
+include "html-header.html"
+
+include "project-nav.html"
+
+<div class="container">
+    <div class="starter-template">
+        <div class="row">
+
+          <div class="col-md-12">
+            <h1>Buttons</h1> <br>
+        </div>
+        <div class="col-md-12">
+
+            <div class="bs-component">
+                include "buttons/button_1.html"
+                include "buttons/button_2.html"
+                include "buttons/button_3.html"
+                include "buttons/button_4.html"
+                include "buttons/button_5.html"
+            </div>
+
+            <br> <br>
+
+            <h5>Large buttons</h5>
+
+            <div class="bs-component">
+                include "buttons/button_1_lg.html"
+                include "buttons/button_2_lg.html"
+                include "buttons/button_3_lg.html"
+                include "buttons/button_4_lg.html"
+                include "buttons/button_5_lg.html"
+            </div>
+            <br> <br>
+
+            <h5>Block buttons</h5>
+
+            <div class="bs-component">        
+                include "buttons/button_1_block.html"
+            </div>
+
+            <br>
+
+            <h5>Buttons group</h5>
+            <div class="bs-component">
+                include "buttons/button_group.html"
+            </div>
+
+        </div>
+    </div>
+
+</div> <!--// starter-template -->
+</div> <!--// container -->
+
+        <!-- <script>
+        $.getJSON('http://api.nytimes.com/svc/search/v2/articlesearch.json?begin_date=20141201&end_date=20141218&sort=newest&api-key=d2eb8fef0d3b7f3917086ce5354b4a0b%3A12%3A70461662', function(data) {
+        var template = $('#personTpl').html();
+        var html = Mustache.to_html(template, data);
+        $('#sampleArea').html(html); });
+        </script>
+
+        <script id="personTpl" type="text/template">
+
+        {{#response}}
+        {{#docs}}
+        <div class='panel panel-default slide-bottom'>
+        <div class='panel-body'>  
+        <h4>{{subsection_name}}</h4>
+        <h3>{{headline.main}}</h3>
+        <h6>{{pub_date}} &nbsp; {{byline.original}} </h6>
+        <h6></h6>
+        <p>{{snippet}}</p>
+        <a href='{{web_url}}'>Read full article</a>
+        </div></div>
+
+        
+        {{/docs}}
+        {{/response}}
+
+    </script> -->
+
+    include "scripts.html"

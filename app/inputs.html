@@ -1,0 +1,61 @@
+include "html-header.html"
+
+include "project-nav.html"
+
+<div class="container">
+  <div class="starter-template">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Inputs</h1><br>
+      </div>
+      <div class="col-md-6">
+
+        include "inputs/simple-input.html"
+        <br>
+        include "inputs/textarea.html"
+        <br>
+        include "inputs/checkboxes.html"  
+      </div>
+
+    </div> <!--// Row -->
+
+  </div> <!--// starter-template -->
+</div> <!--// container -->
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-12">
+      <h3>Inline form with floating labels</h3> <br>
+    </div>
+
+    <form action="" class=" formtest" role="form">
+
+      <div class="form-group col-xs-12 col-md-3">
+        include "inputs/floating-input.html"
+      </div>
+
+      <div class="form-group col-xs-12 col-md-3">
+        include "inputs/floating-input.html"
+      </div>
+
+      <div class="form-group col-xs-12 col-md-3">
+        include "inputs/floating-input.html"
+      </div>
+
+      <div class="form-group col-xs-12 col-md-3">
+        include "inputs/floating-input.html"
+      </div>
+    </form>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <p>This uses <a href="https://github.com/peachananr/label_better">Jquery label better</a> for floating labels.
+        <br>
+        just add the class <i>label_better</i> and <i>data-position="top"</i> to the input then initiate with jQuery. More info on the plugin page.
+
+      </p>
+    </div>
+  </div>
+</div>
+
+include "scripts.html"
