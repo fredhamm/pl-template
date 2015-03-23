@@ -1,0 +1,204 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
+
+
+  <!-- BS modal -->
+
+
+  <div id="source-modal" class="modal fade" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Source Code</h4>
+        </div>
+        <div class="modal-body">
+          <pre></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <a class="navbar-brand" href="index.html">PL-template</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Styleguide<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="logos.html">Logos</a></li>
+            <li><a href="colors.html">Colors</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="tone-voice.html">Tone of voice</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="grid.html">Grid</a></li>
+            <li><a href="buttons.html">Buttons</a></li>
+            <li><a href="inputs.html">Inputs</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="fonticon.html">Font Icon</a></li>
+            <li><a href="progressbars.html">Progress bars</a></li>
+            <li><a href="panels.html">Panels</a></li>
+            <!-- <li><a href="#">Forms</a></li> -->
+            <li><a href="image-carousel.html">Image carousel</a></li>
+            <li><a href="fullpage-carousel.html">Full page carousel</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="labels.html">Labels</a></li>
+            <li><a href="#">Tooltips</a></li>
+
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modules<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="header.html">Header</a></li>
+            <li><a href="footer.html">Footer</a></li>
+            <!-- <li><a href="#">Article</a></li> -->
+            <li><a href="sections.html">Sections</a></li>
+            <li><a href="cards.html">Cards</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Templates<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="homepage.html">Homepage</a></li>
+            <!-- <li><a href="#">Blog</a></li> -->
+            <li><a href="article.html">Article</a></li>
+            <li><a href="login.html">Login page</a></li>
+          </ul>
+        </li>
+        <li class="dropdown visible-sm">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Repo link</a></li>
+            <li><button class="btn btn-primary">Download source files</button></li>
+          </ul>
+        </li>
+        
+        <li class="hidden-sm"><a href="">Repo link</a></li>
+        <li class="navbar-right hidden-sm"><button class="btn btn-primary navbar-btn">Download source files</button></li>
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<div class="container">
+  <div class="starter-template">
+    <div class="row">
+      <div class="col-md-12"><h1>Login</h1><br></div>
+
+      <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+        <div class="bs-component">
+        	<div class="panel panel-default login-panel">
+        		<div class="panel-body">
+        			<h3 class="text-center">Login</h3>
+        			<form>	   
+        				<div class="form-group">
+        					<label class="sr-only" for="">Username</label>
+        					<input type="email" class="form-control label_better" id="" data-position="top" placeholder="Username">
+        				</div>
+
+        				<div class="form-group">
+        					<label class="sr-only" for="">Password</label>
+        					<input type="password" class="form-control label_better" id="" data-position="top" placeholder="Password">
+        				</div>
+
+        				<button type="submit" class="btn btn-primary btn-block">Login<div class="ripple-wrapper"></div></button>
+        			</form>
+
+        		</div>
+        	</div> 	
+        </div>
+      </div>
+
+    </div> <!--// Row -->
+
+  </div> <!--// starter-template -->
+</div> <!--// container -->
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+//   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+//   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+//   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+//   e.src='//www.google-analytics.com/analytics.js';
+//   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+//   ga('create','UA-XXXXX-X');ga('send','pageview');
+// </script>
+
+
+<!-- build:js scripts/jquery.js -->
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/mustache/mustache.js"></script>
+<script src="../bower_components/jquery-fadethis/dist/jquery.fadethis.min.js"></script>
+<script src="../bower_components/flickity/dist/flickity.pkgd.min.js"></script>
+<script src="../bower_components/RWD-Table-Patterns/src/js/rwd-table.js"></script>
+<script src="../bower_components/flickerplate/js/flickerplate.js"></script>
+<script src="../bower_components/flickerplate/js/min/hammer-v2.0.3.min.js"></script>
+<!-- endbuild -->
+
+
+<!-- build:js scripts/vendor/bootstrap.js -->
+<script src="../bower_components/bootstrap/js/affix.js"></script>
+<script src="../bower_components/bootstrap/js/alert.js"></script>
+<script src="../bower_components/bootstrap/js/dropdown.js"></script>
+<script src="../bower_components/bootstrap/js/tooltip.js"></script>
+<script src="../bower_components/bootstrap/js/modal.js"></script>
+<script src="../bower_components/bootstrap/js/transition.js"></script>
+<script src="../bower_components/bootstrap/js/button.js"></script>
+<script src="../bower_components/bootstrap/js/popover.js"></script>
+<script src="../bower_components/bootstrap/js/carousel.js"></script>
+<script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+<script src="../bower_components/bootstrap/js/collapse.js"></script>
+<script src="../bower_components/bootstrap/js/tab.js"></script>
+<!-- endbuild -->
+
+
+ <!-- build:js scripts/main.js -->
+<script src="../scripts/main.js"></script>
+<script src="../scripts/highlighter.js"></script>
+<script src="../scripts/jquery.label_better.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>
