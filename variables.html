@@ -1,0 +1,263 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="stylesheet" href="styles/f76cc922.main.css">
+  <script src="scripts/vendor/modernizr.js"></script>
+</head>
+<body>
+
+
+  <!-- BS modal -->
+
+
+  <div id="source-modal" class="modal fade" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Source Code</h4>
+        </div>
+        <div class="modal-body">
+          <pre></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="index.html"> <img src="images/11f1237d.apegroup_logo.png" alt="">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Styleguide<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Logos</a>
+                        </li>
+                        <li><a href="colors.html">Colors</a>
+                        </li>
+                        <li><a href="typography.html">Typography</a>
+                        </li>
+                        <li><a href="#">Tone of voice</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Grid</a>
+                        </li>
+                        <li><a href="#">Font styles</a>
+                        </li>
+                        <li><a href="buttons.html">Buttons</a>
+                        </li>
+                        <li><a href="#">Inputs</a>
+                        </li>
+                        <li><a href="#">Tables</a>
+                        </li>
+                        <li><a href="#">Images</a>
+                        </li>
+                        <li><a href="#">Font Icon</a>
+                        </li>
+                        <li><a href="#">Progress bars</a>
+                        </li>
+                        <li><a href="#">Panels</a>
+                        </li>
+                        <li><a href="#">Navigation</a>
+                        </li>
+                        <li><a href="#">Forms</a>
+                        </li>
+                        <li><a href="#">Image carousel</a>
+                        </li>
+                        <li><a href="cards.html">Cards</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modules<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Header</a>
+                        </li>
+                        <li><a href="#">Footer</a>
+                        </li>
+                        <li><a href="#">Article</a>
+                        </li>
+                        <li><a href="#">Sections</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Templates<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Homepage</a>
+                        </li>
+                        <li><a href="#">Blog</a>
+                        </li>
+                        <li><a href="#">Article</a>
+                        </li>
+                        <li><a href="#">Login page</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Repo link</a>
+                </li>
+                <li class="navbar-right">
+                    <button class="btn btn-primary navbar-btn">Download source files</button>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <div class="starter-template">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Variables</h1>
+            </div>
+            <div class="col-md-6">
+                <h2>Buttons</h2> </div>
+                <div class="col-md-6"> <pre>
+                    <strong>LESS</strong>
+
+                    @btn-font-weight:                normal;
+
+                    @btn-default-color:              #333;
+                    @btn-default-bg:                 #fff;
+                    @btn-default-border:             #ccc;
+
+                    @btn-primary-color:              #fff;
+                    @btn-primary-bg:                 @brand-primary;
+                    @btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+                    @btn-success-color:              #fff;
+                    @btn-success-bg:                 @brand-success;
+                    @btn-success-border:             darken(@btn-success-bg, 5%);
+
+                    @btn-info-color:                 #fff;
+                    @btn-info-bg:                    @brand-info;
+                    @btn-info-border:                darken(@btn-info-bg, 5%);
+
+                    @btn-warning-color:              #fff;
+                    @btn-warning-bg:                 @brand-warning;
+                    @btn-warning-border:             darken(@btn-warning-bg, 5%);
+
+                    @btn-danger-color:               #fff;
+                    @btn-danger-bg:                  @brand-danger;
+                    @btn-danger-border:              darken(@btn-danger-bg, 5%);
+
+                    @btn-link-disabled-color:        @gray-light;
+                </pre> </div>
+                <!--// md6 -->
+            </div>
+            <!--// Row -->
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Padding</h2> </div>
+                    <div class="col-md-6"> <pre>
+                        <strong>LESS</strong>
+
+                        @padding-base-vertical:     6px;
+                        @padding-base-horizontal:   12px;
+
+                        @padding-large-vertical:    10px;
+                        @padding-large-horizontal:  16px;
+
+                        @padding-small-vertical:    5px;
+                        @padding-small-horizontal:  10px;
+
+                        @padding-xs-vertical:       1px;
+                        @padding-xs-horizontal:     5px;
+
+                    </pre> </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Font-sizes</h2> </div>
+                        <div class="col-md-6"> <pre>
+                            <strong>LESS</strong>
+
+                            @font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            @font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+                            @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+                            @font-family-base:        @font-family-sans-serif;
+
+                            @font-size-base:          14px;
+                            @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+                            @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+                            @font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+                            @font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+                            @font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+                            @font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+                            @font-size-h5:            @font-size-base;
+                            @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+
+                            @line-height-base:        1.428571429; // 20/14
+
+                            @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+
+                            @headings-font-family:    inherit;
+                            @headings-font-weight:    500;
+                            @headings-line-height:    1.1;
+                            @headings-color:          inherit;
+                        </pre> </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Cards</h2> </div>
+                            <div class="col-md-6"> <pre>
+                                <strong>LESS</strong>
+
+                                @thumbnail-padding:           4px;
+                                @thumbnail-bg:                @body-bg;
+                                @thumbnail-border:            #ddd;
+                                @thumbnail-border-radius:     @border-radius-base;
+                                @thumbnail-caption-color:     @text-color;
+                                @thumbnail-caption-padding:   9px;
+                            </pre> </div>
+                        </div>
+                    </div>
+                    <!--// starter-template -->
+                </div>
+                <!--// container -->
+                <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <![endif]-->
+
+                <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+                <script>
+                //   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                //   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                //   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                //   e.src='//www.google-analytics.com/analytics.js';
+                //   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                //   ga('create','UA-XXXXX-X');ga('send','pageview');
+                // </script>
+
+
+                <script src="scripts/8505a35f.jquery.js"></script>
+
+
+                <script src="scripts/vendor/49d9d00c.bootstrap.js"></script>
+
+
+                 <script src="scripts/3f25af13.main.js"></script>
+
+                </body>
+                </html>
